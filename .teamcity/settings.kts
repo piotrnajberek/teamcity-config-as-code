@@ -46,10 +46,15 @@ object Build : BuildType({
             dockerImage = "node:8.16.1-jessie"
         }
     }
-/*
     triggers {
         vcs {
         }
+        schedule {
+            schedulingPolicy = cron {
+                minutes = "5"
+            }
+            triggerBuild = always()
+            withPendingChangesOnly = false
+        }
     }
-    */
 })

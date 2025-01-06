@@ -8,7 +8,7 @@ import jetbrains.buildServer.configs.kotlin.triggers.schedule
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 object Build : BuildType({
-    name = "Build"
+    name = "Build2"
 
     vcs {
         root(HttpsGithubComPiotrnajberekAnsible)
