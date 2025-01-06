@@ -46,9 +46,10 @@ object Build : BuildType({
             dockerImage = "node:8.16.1-jessie"
         }
     }
-
+/*
     triggers {
         vcs {
         }
     }
+    */
 })
